@@ -29,7 +29,7 @@ const TransactionMenu = () => {
       setXRequestId(XRequestId);
 
       const response = await fetch(
-        "http://localhost:3000/api/v1/admin/transactions",
+        `https://week-15-hartantodody.up.railway.app/api/v1/admin/transactions`,
         {
           method: "GET",
           headers: {
@@ -60,7 +60,7 @@ const TransactionMenu = () => {
       setXRequestId(XRequestId);
 
       const response = await fetch(
-        `http://localhost:3000/api/v1/admin/transactions/${id}`,
+        `https://week-15-hartantodody.up.railway.app/api/v1/admin/transactions/${id}`,
         {
           method: "DELETE",
           headers: {

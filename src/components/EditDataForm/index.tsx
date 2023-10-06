@@ -19,7 +19,7 @@ const EditDataForm = () => {
         const XRequestId = uuidv4();
         setXRequestId(XRequestId);
         const response = await fetch(
-          `http://localhost:3000/api/v1/admin/transactions/${id}`,
+          `https://week-15-hartantodody.up.railway.app/api/v1/admin/transactions/${id}`,
           {
             method: "GET",
             headers: {
@@ -49,7 +49,7 @@ const EditDataForm = () => {
       const XRequestId = uuidv4();
       setXRequestId(XRequestId);
       const response = await fetch(
-        `http://localhost:3000/api/v1/admin/transactions/${id}`,
+        `https://week-15-hartantodody.up.railway.app/api/v1/admin/transactions/${id}`,
         {
           method: "PUT",
           headers: {
