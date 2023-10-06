@@ -1,0 +1,13 @@
+/* Navbar.module.css */
+
+.mobile-menu {
+    display: none;
+    transform: translateY(-100%); /* Start off-screen (above) */
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
+  }
+  
+  .mobile-menu.open {
+    display: block;
+    transform: translateY(0); /* Slide down to its natural position */
+  }
+  
